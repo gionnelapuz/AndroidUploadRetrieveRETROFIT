@@ -1,6 +1,9 @@
 # AndroidUploadRetrieveRETROFIT
 Android project that Uploads and Retrieves Text and Images from a Database using RETROFIT
 
+## Image Library used
+- Picasso Image Library
+
 ## Application Screenshots
 
 ### MainActivity
