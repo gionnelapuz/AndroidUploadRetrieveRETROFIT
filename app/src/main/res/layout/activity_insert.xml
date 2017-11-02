@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gin.androiduploadretrieveretrofit.insertActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOADING"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD TEXT"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_marginTop="5dp"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/txtName"
+            android:layout_alignBaseline="@+id/txtName"
+            android:layout_toEndOf="@+id/txtName"/>
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/editTextName"
+            android:textColor="#000"/>
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_alignTop="@+id/txtAge"
+            android:layout_alignBaseline="@+id/txtAge"
+            android:layout_toEndOf="@+id/txtAge"/>
+
+        <Button
+            android:id="@+id/btnInsertText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD TEXT"
+            android:layout_below="@id/editTextAge"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPLOAD IMAGE"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnInsertImage"
+            android:layout_alignParentTop="true"
+            android:background="#9E9E9E"/>
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE IMAGE"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/btnInsertImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gin.androiduploadretrieveretrofit.retrieveActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnRetrieveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETRIEVE TEXTS"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/btnRetrieveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RETRIEVE IMAGES"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewRetrieveText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"></ListView>
+    <GridView
+        android:id="@+id/gridViewRetrieveImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"></GridView>
+
+</RelativeLayout>
