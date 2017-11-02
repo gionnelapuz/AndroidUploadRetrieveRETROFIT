@@ -24,7 +24,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class retrieveActivity extends AppCompatActivity {
 
-    public static String ROOT_URL = "https://harleylapuz.000webhostapp.com/";
+    public static String ROOT_URL = "https://YOUR-URL/";
 
     private Button btnRetrieveText, btnRetrieveImage;
     private ListView listViewRetrieveText;

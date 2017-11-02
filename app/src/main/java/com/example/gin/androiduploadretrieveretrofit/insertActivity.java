@@ -37,7 +37,7 @@ public class insertActivity extends AppCompatActivity {
     private ImageView imageUpload;
     private Bitmap bitmap;
 
-    public static String ROOT_URL = "https://harleylapuz.000webhostapp.com/";
+    public static String ROOT_URL = "https://YOUR-URL/";
 
 
     @Override
